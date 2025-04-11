@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>String Template</title>
+</head>
+<body>
+
+</body>
+<script>
+  /*
+  - Kita sudah tahu untuk menambahkan string dengan data lain, kita bisa menggunakan operator plus (+)
+  - Namun pada kasus tertentum, penggunaan operator plus sangat menyulitkan, apalagi jika dalam jumlah yang banyak
+  - Javascipt memiliki fitur yang bernama String Template, dimana kita bisa mesubtitusi data dari luar String, seperti
+    mengambil data variable, atau bahkan melakukan operasi matematika
+  - Untuk menggunakan String Template, cara pembuatan String nya harus menggunakan `(backtick), bukan '(petik satu)
+    atau "(petik dua)
+   */
+
+  const name = "Rofiqul Umma";
+  const firstname = "Rofiqul";
+  const lastname = "umma";
+
+  const template = `Name: ${name}`
+  const template2 = `Nama panjang: ${firstname} ${lastname}`
+
+  const nilai = 100;
+
+  const template3 = `Name: ${name}, lulus: ${nilai > 90}`;
+
+  const multiline = ` Nama saya Rofiqul
+  sekarang sedang bekerja,
+  sering juga scroll fesbuk
+  kalau lagi malas seringnya scroll fesbuk
+  `
+
+  document.writeln("<pre>");
+  console.info(multiline);
+  document.writeln("</pre>");
+
+  console.info(template);
+  console.info(template2);
+  console.info(template3);
+</script>
+</html>
