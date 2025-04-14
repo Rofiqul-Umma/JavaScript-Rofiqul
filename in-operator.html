@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In Operator</title>
+</head>
+<body>
+
+</body>
+<script>
+  /*
+  In Operator
+  ------------------------------------
+  - In operator adalah operator yang bisa dilakukan untuk mengecek apakah sebuah properthy ada di dalam object atau tidak
+  - Jika property tersebut ada di object, maka hasilnya true, sedangkan jika tidak, maka hasilnya false
+  - Tidak hanya di object, "In" juga bisa digunakan untuk mengecek index di dalam array
+   */
+
+  const person = {
+    firstName: "Rofiqul",
+    lastName: "Umma"
+  };
+
+  if("firstName" in person){
+    alert("Hello " + person.firstName);
+  }else{
+    alert("Hello World");
+  }
+
+  /*
+  Peringatan
+  --------------------------------
+  - In operator hanya akan mengecek apakah sebuah property atau index ada atau tidak
+  - Jadi walaupun nilai property atau indexnya undefined atau null, maka akan tetap dianggap ada
+   */
+
+  const student = {
+      firstName: "Rofiqul",
+      lastName: undefined
+  };
+  if("lastName" in student) {
+      alert("Hello " + student.lastName);
+  }else{
+      alert("Hello Student");
+  }
+
+  //In operatir undefined/ null propery
+  //Pada in operator walaupun nilainya undefined atau null, tetap dianggap ada
+  const names = ["Rofiqul", null, undefined];
+  const result = 1 in names;
+  document.writeln("<p>" + result + "</p>");
+</script>
+</html>

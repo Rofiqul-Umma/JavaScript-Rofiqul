@@ -20,9 +20,53 @@
 
   /*
   Cara kerja Array
-  - Setiap data di array akan disimpan dalam posisi berurutan, dimana urutan pertama dimulai dari nomor 1.
+  - Setiap data di array akan disimpan dalam posisi berurutan, dimana urutan pertama dimulai dari nomor 0.
   - Setiap kita menambah data array, otomatis data akan disimpan di urutan terakhir
   - Urutan di dalam array kita disebut dengan index
+   */
+
+  const names = [];
+  names.push("Rofiq");
+  names.push("Mantap", "Jiwa", "EKo");
+  names.push("Budi", "Joko", "Rudy")
+  console.table(names);
+
+  /*
+  Operasi di Array
+  -----------------------------
+  array.push(value) = Menambahkan data ke array
+  array.length = Untuk mendapatkan value panjang dari array
+  array[index] = Mendapatkan data sesuai index yang kita inginkan
+  array[index] = value = Mengubah data pada posisi index yang diinginkan
+  delete array[index] = Menghapus data di posisi index, namun index tidak bergeser
+   */
+  names[0] = "Fesnuk"; // update data
+  delete names[0];
+  names[3] = "Diubah lagi bos";
+  console.info(names[0]);
+  console.info(names[1]);
+  console.info(names[2]);
+  console.table(names)
+  /*
+  Reminder !!!
+  --------------------------------
+  - Data di dalam array tidak ada batasannya harus data apa
+  - Jadi kita bisa memasukkan adata apapun ke dalam array
+  - Bahkan juga bisa memasukan array jika kita mau
+   */
+  const exampleReminder = ["Eko", true, 1, 1.1];
+  names.push(["Mantap"]);
+  console.table(names);
+
+  /*
+  Associative Array
+  ------------------------------
+  - Di bahasa pemrograman lain seperti PHP, kita bisa menggunakan index berupa tipe data lain selain number, misalnya
+    string
+  - Fitur ini biasanya disebut associative array atau hash
+  - Di Javascript associative array tidak didukung
+  - Jika kita memaksa memasukkan data bukan number di index Array maka javascript akan merubah tipe data array tersebut
+    menjadi object, dan bisa berbahaya, karena beberapa operasi di array mungkin bisa berubah hasilnya
    */
 </script>
 </html>

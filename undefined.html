@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Undefined</title>
+</head>
+<body>
+
+</body>
+<script>
+  /*
+  Undefined
+  --------------------------------------
+  - Undifined adalah sebuah kata kunci di javascript
+  - Undifined merupakan sebuah tipe data pada javascript
+  - Sebuah variabel yang belum ditambahkan nilai, maka artinya variable tersebut merupakan tipe undifined
+  - Kadang untuk programmer javascript pemula undifined ini memang agak sedikit membingungkan
+  - Undifined itu berbeda dengan null di bahasa pemrograman lain
+   */
+  let name; // variabel name tidak memiliki nilai dab dianggap undefined
+  if(name === undefined){
+    console.info("Undefined");
+  }else{
+    console.info("Defined");
+  }
+
+  //Undefined array
+  const names = ["Rofiq", "Umma"];
+  if(names[2] === undefined) {
+    console.info("Array Undefined");
+  }else{
+    console.info("Array Defined");
+  }
+
+  //Undefined object
+  let person = {};
+  if(person.name === undefined) {
+    console.info("Object Undefined");
+  }else{
+    console.info("Object Defined");
+  }
+</script>
+</html>

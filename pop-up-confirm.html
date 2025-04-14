@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pop Up Confirm</title>
+</head>
+<body>
+
+</body>
+<script>
+  //Confirm digunakan untuk meminta konfirmasi dari user
+  //dan akan mengembalikan nilai boolean true atau false dari user
+  const masuk = confirm("Apakah ada yakin akan masuk?");
+  if(masuk){
+    const name = prompt("Siapa nama anda?");
+    alert(`Selamat datang ${name}`);
+  }else{
+    alert("Anda scam");
+  }
+</script>
+</html>
