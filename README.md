@@ -1,1 +1,1 @@
-# JavaScript-Rofiqul
+# This repository for securing JS code
